@@ -174,6 +174,7 @@ const projects = [
         name: 'Javascript',
         type: 'Programming Language',
         icon: 'js icon.png',      
+        
       },
     ]
   },
