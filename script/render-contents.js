@@ -61,7 +61,7 @@ function renderHomeSectionContents() {
   const techStackSkills = techStacks.map(techStack =>
     `  <div class="skill-card" title="${techStack.name}">
           <img src="images-and-icons/icons/${techStack.icon}" alt="skill-icon" class="skill-icon">
-       </div>
+      </div>
     `
   ).join('');
 
@@ -245,6 +245,9 @@ function renderProjectFullView(project, nextProjectTitle) {
 
             <button class="visit-project-btn container scroll-animate--upward">
               <a href="${project.projectLink}" class="project-link">View Project</a>
+            </button>
+            <button class="visit-project-btn container scroll-animate--upward">
+              <a href="${project.projectLinkGit}" class="project-link">View GitHub</a>
             </button>
           </div>
         </div>

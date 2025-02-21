@@ -25,7 +25,8 @@ const projects = [
     projectGoal: 'Presenting my work, skills and personal info.',
     logo: 'project logo 1.png', // Add your project logo to the "projects-logos" folder and specify the filename here
     image: 'project-image1.png', // Add your project image to the "images" folder and specify the filename here
-    projectLink: 'https://github.com/Dark-Vol/Store-Shoping',
+    projectLink: '',
+    projectLinkGit: "https://github.com/Dark-Vol/Store-Shoping",
     overview: `This project is being created as a diploma project in the specialty "Software Engineering".`,
     techStacks: [
       {
@@ -80,6 +81,7 @@ const projects = [
     logo: 'project logo 2.png', // Add your project logo to the "projects-logos" folder and specify the filename here
     image: 'project-image2.png', // Add your project image to the "images" folder and specify the filename here
     projectLink: 'https://meowish-0.github.io/Meowish-Website2/page.html',
+    projectLinkGit: "",
     overview: `Put your project overview here. Briefly describe what your project is about and its key features.`,
     techStacks: [
       {
@@ -119,6 +121,7 @@ const projects = [
     logo: 'project logo 3.png', // Add your project logo to the "projects-logos" folder and specify the filename here
     image: 'Odigo.png', // Add your project image to the "images" folder and specify the filename here
     projectLink: 'https://dark-vol.github.io/Odigo/',
+    projectLinkGit: "https://github.com/Dark-Vol/Odigo",
     overview: `Put your project overview here. Briefly describe what your project is about and its key features.`,
     techStacks: [
       {
@@ -147,7 +150,8 @@ const projects = [
     projectGoal: 'Presenting my work, skills and personal info.',
     logo: 'project logo 4.png', // Add your project logo to the "projects-logos" folder and specify the filename here
     image: 'Createx-Marathon.png', // Add your project image to the "images" folder and specify the filename here
-    projectLink: 'https://github.com/Dark-Vol/Createx-Marathon',
+    projectLink: 'https://dark-vol.github.io/Createx-Marathon/',
+    projectLinkGit: "https://github.com/Dark-Vol/Createx-Marathon",
     overview: `Put your project overview here. Briefly describe what your project is about and its key features.`,
     techStacks: [
       // Add your tech stack icons to the "icons" folder and specify their filenames here
