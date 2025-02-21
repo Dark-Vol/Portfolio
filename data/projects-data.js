@@ -177,26 +177,27 @@ const projects = [
       },
     ]
   },
-  // {
-  //   id: 4, // Don't change the project ID
-  //   title: 'Setup Wallpaper Tutorial',
-  //   mainColor: 'rgb(0, 170, 255)',
-  //   type: 'Video',
-  //   yearCreated: '2024',
-  //   projectGoal: 'To display some of my information',
-  //   logo: 'project logo 5.png', // Add your project logo to the "projects-logos" folder and specify the filename here
-  //   image: 'project-image5.png', // Add your project image to the "images" folder and specify the filename here
-  //   projectLink: 'https://drive.google.com/file/d/1Dg2t_YNNNHnBftXQH-4mKfYUvFJNpYBi/view', //paste your project link, if your project is video upload to drive or YT the paste the link here
-  //   overview: `Put your project overview here. Briefly describe what your project is about and its key features.`,
-  //   techStacks: [
-  //     // Add your tech stack icons to the "icons" folder and specify their filenames here
-  //     {
-  //       name: 'Capcut',
-  //       type: 'video editing software',
-  //       icon: 'capcut-icon.png',      
-  //     }
-  //   ]
-  // },
+  {
+    id: 4,
+    title: '',
+    mainColor: 'rgb(0, 170, 255)',
+    type: '',
+    yearCreated: '2024',
+    projectGoal: 'To display some of my information',
+    logo: 'project logo 5.png', // Add your project logo to the "projects-logos" folder and specify the filename here
+    image: 'project-image5.png', // Add your project image to the "images" folder and specify the filename here
+    projectLink: '',
+    projectLinkGit: "",
+    overview: `Put your project overview here. Briefly describe what your project is about and its key features.`,
+    techStacks: [
+      // Add your tech stack icons to the "icons" folder and specify their filenames here
+      {
+        name: 'X',
+        type: 'X',
+        icon: 'X',      
+      }
+    ]
+  },
   // {
   //   id: 4, // Don't change the project ID
   //   title: 'Astro Solve',
