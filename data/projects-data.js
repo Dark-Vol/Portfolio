@@ -1,19 +1,3 @@
-/**
- * 🔥 Projects Data 🔥
- * - id: Unique project ID (Do not change to avoid issues).
- * - title: Project name.
- * - mainColor: Primary color of the project.
- * - type: Website, Video, UI Design, etc. (What type of project is this?).
- * - yearCreated: Year the project was created (To keep track of your work history).
- * - projectGoal: What is the goal of this project?
- * - logo: File name of the project logo (Located in the "projects-logos" folder).
- * - image: File name of the project image (Located in the "images" folder).
- * - projectLink: Project link (video, website, image, design).
- * - overview: A brief description of what this project is about.
- * - techStacks: List of technologies/tools used in this project.
- */
-
-
 
 const projects = [
   {
@@ -198,26 +182,25 @@ const projects = [
       }
     ]
   },
-  // {
-  //   id: 4, // Don't change the project ID
-  //   title: 'Astro Solve',
-  //   mainColor: 'rgb(111, 0, 202)',
-  //   type: 'UI Design',
-  //   yearCreated: '2027',
-  //   projectGoal: 'To display some of my information',
-  //   logo: 'project logo 6.png', // Add your project logo to the "projects-logos" folder and specify the filename here
-  //   image: 'project-image6.png', // Add your project image to the "images" folder and specify the filename here
-  //   projectLink: '#',
-  //   overview: `Put your project overview here. Briefly describe what your project is about and its key features.`,
-  //   techStacks: [
-  //     // Add your tech stack icons to the "icons" folder and specify their filenames here
-  //     {
-  //       name: 'Figma',
-  //       type: 'HyperText Markup Language',
-  //       icon: 'figma icon.png',      
-  //     }
-  //   ]
-  // }
+  {
+    id: 4, // Don't change the project ID
+    title: 'Astro Solve',
+    mainColor: 'rgb(111, 0, 202)',
+    type: 'Xn',
+    yearCreated: '2027',
+    projectGoal: 'To display some of my information',
+    logo: 'project logo 6.png', // Add your project logo to the "projects-logos" folder and specify the filename here
+    image: 'project-image6.png', // Add your project image to the "images" folder and specify the filename here
+    projectLink: '#',
+    overview: `Put your project overview here. Briefly describe what your project is about and its key features.`,
+    techStacks: [
+      {
+        name: 'X',
+        type: 'X',
+        icon: 'X',      
+      }
+    ]
+  }
 ];
 
 
