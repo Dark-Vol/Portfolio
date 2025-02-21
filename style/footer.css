@@ -1,0 +1,74 @@
+footer{
+  display: flex;
+  margin-top: 10rem;
+  padding-bottom: 1.5rem;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+}
+
+footer .socmed-nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 1.7rem;
+}
+
+footer .socmed-nav .socmed-icon{
+  width: 2rem;
+  opacity: 0.75;
+}
+
+footer .copyright-txt{
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.6rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+footer a.scroll-to-top-btn.glowing-button{
+  --rotate-speed: 3.8s;
+  --offset: 1.2px;
+  /* --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0.854), transparent); */
+  --glow-value: 450px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+footer a.scroll-to-top-btn{
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  background-color: rgb(15, 15, 15);
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(0, 0, 0, 0) 0px -1px 1px 0px inset, rgba(0, 0, 0, 0.1) 0px 5px 10px 0px;
+  border-radius: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 8px 10px;
+}
+
+footer a.scroll-to-top-btn .label{
+  color: rgba(255, 255, 255, 0.463);
+  font-weight: 500;
+  z-index: 2;
+}
+
+footer a.scroll-to-top-btn .scroll-top-icon{
+  opacity: 0.2;
+  width: 1.2rem;
+  z-index: 2;
+}
+
+@media(width > 780px){
+  footer{
+    flex-direction: row;
+  }
+
+  footer .socmed-nav{
+    margin-right: 2.8rem;
+  }
+
+  footer a.scroll-to-top-btn{
+    margin-left: auto;
+  }
+}

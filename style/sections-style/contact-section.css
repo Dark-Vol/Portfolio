@@ -1,0 +1,54 @@
+#contact-section{
+  text-align: center;
+}
+
+#contact-section .heading{
+  font-size: clamp(44px, 10vw, 64px);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.84);
+  text-shadow: var(--text-light-shadow);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(0deg, rgba(213, 216, 234, 0.886) 0%, rgb(223, 226, 245) 100%);
+  margin-bottom: 2.4rem;
+}
+
+#contact-section .copy-to-clipboard-btn{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: clamp(1rem, 5vw, 24px) ;
+  background-color: rgb(14, 14, 15);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 17px;
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.114) 0px 0.602187px 1.08394px -0.416667px, rgba(0, 0, 0, 0.15) 0px 2.28853px 4.11936px -0.833333px, rgba(0, 0, 0, 0.306) 0px 10px 18px -1.25px;
+  padding: 15px 20px;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+#contact-section .copy-to-clipboard-btn.glowing-button{
+  --rotate-speed: 3.8s;
+  --offset: 1.2px;
+  /* --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0.854), transparent); */
+  --glow-value: 450px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+#contact-section .copy-to-clipboard-btn .copy-icon{
+  width: clamp(1.3rem, 5vw, 1.7rem);
+  z-index: 2;
+}
+
+#contact-section .copy-to-clipboard-btn .copy-detail{
+  color: var(--primary-light-color);
+  letter-spacing: 0.01em;
+  z-index: 2;
+}

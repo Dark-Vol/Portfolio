@@ -1,0 +1,152 @@
+:root{
+  --primary-color: rgb(255, 255, 255);
+  --primary-light-color: #D1D5E6DE;
+  --neutral-color: rgb(1,1,3);
+  --accent-color: rgb(155, 199, 177);
+  --pastel-color: rgb(15, 15, 15);
+  --text-light-shadow: rgba(255, 255, 255, 0.33) 0px 0px 7px;
+
+  --small-Fsize: 12px;
+  --medium-Fsize: 20px;
+  --large-Fsize: 30px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+  scrollbar-width:thin;
+  height: 100%;
+}
+
+body{
+  --wrapper-max-width: 1070px;
+  --wrapper-padding: 14.3%;
+
+  position: relative;
+  height: 100%;
+  font-family: "General Sans", "General Sans Placeholder", sans-serif;
+  background-color: var(--neutral-color);
+  color: var(--primary-color);
+}
+
+.wrapper{
+  width: min(var(--wrapper-max-width), 100% - var(--wrapper-padding));
+  margin-inline: auto;
+}
+
+
+/* Reload Animation */
+.reload-animation{
+  opacity: 0;
+  scale: 0.95;
+}
+
+@keyframes reload-animation{
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
+/* Glowing Buttons Animation */
+.glowing-button:before{
+  content: '';
+  background: var(--glow-color);
+  height: var(--glow-value);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  animation: light-rotate var(--rotate-speed) linear infinite;
+}
+
+.glowing-button::after{
+  content: '';
+  position: absolute;
+  background: inherit;
+  border-radius: inherit;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+@keyframes remove-glow {
+  0% {
+    --glow-color: conic-gradient(transparent 270deg, white, transparent);
+  }
+  10% {
+    --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0.3), transparent);
+  }
+  20% {
+    --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0.25), transparent);
+  }
+  40% {
+    --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0.2), transparent);
+  }
+  60% {
+    --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0.15), transparent);
+  }
+  80% {
+    --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0.05), transparent);
+  }
+  100% {
+    --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0), transparent);
+  }
+}
+
+@keyframes add-glow {
+  0% {
+    --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0), transparent);
+  }
+  10% {
+    --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0.05), transparent);
+  }
+  20% {
+    --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0.15), transparent);
+  }
+  40% {
+    --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0.2), transparent);
+  }
+  60% {
+    --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0.25), transparent);
+  }
+  80% {
+    --glow-color: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0.3), transparent);
+  }
+  100% {
+    --glow-color: conic-gradient(transparent 270deg, white, transparent);
+  }
+}
+
+@keyframes light-rotate{
+  from{
+    transform: translate(-50%, -50%) scale(1) rotate(0turn);
+  }
+  to{
+    transform: translate(-50%, -50%) scale(1) rotate(1turn);
+  }
+}

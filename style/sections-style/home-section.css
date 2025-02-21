@@ -1,0 +1,163 @@
+#home-section{
+  max-width: 50rem;
+  margin-inline: auto;
+  text-shadow: var(--text-light-shadow);
+  padding-top: 8rem;
+  margin-bottom: 5rem;
+}
+
+#home-section .profilePic-and-skills-container{
+  position: relative;
+  min-width: fit-content;
+  overflow: hidden;
+  height: clamp(19rem, 60vw, 19.5rem);
+  padding: 0rem 0;
+  margin-bottom: 2rem;
+
+  animation: reload-animation 1s forwards ; /* reload animation */
+}
+
+#home-section .profile-photo-container{
+  position: relative;
+  width: clamp(17.5rem, 50vw, 19.1rem);
+  height: clamp(17.5rem, 50vw, 19.5rem);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+  background-color: rgb(21, 21, 24);
+  backdrop-filter: blur(15px);
+  margin-inline: auto;
+  display: flex;
+}
+
+#home-section .profile-photo-container .profile-photo{
+  position: absolute;
+  width: 91%;
+  height: 91%;
+  border-radius: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#home-section .scroller{
+  width: 100%;
+  max-width: 550px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -3%;
+}
+
+#home-section .skills-card-container.d-flex{
+  display: flex;
+  gap: 1rem;
+  padding-block: 0.5em;
+}
+
+#home-section .skills-card-container .skill-card{
+  width: 40px;
+  height: 45px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#home-section .skills-card-container .skill-card .skill-icon{
+  border-radius: 10px;
+  width: 100%;
+  height: 94%;
+}
+
+#home-section .scroller[data-animated=true]{
+  overflow: hidden;
+  --webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 30%,
+    white 70%,
+    transparent);
+  mask: linear-gradient(
+    90deg,
+    transparent,
+    white 30%,
+    white 70%,
+    transparent);
+}
+
+#home-section .scroller[data-animated=true] .scroller__inner{
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: skills-scroll var(--_animation-duration, 30s)
+                    var(--_animation-direction, forwards)
+                    linear infinite;
+}
+
+#home-section .scroller[data-direction="right"]{
+  --_animation-direction: reverse;
+}
+
+#home-section .scroller[data-direction="left"]{
+  --_animation-direction: forwards;
+}
+
+#home-section .bio{
+  color: var(--primary-light-color);
+  font-size: clamp(25px, 4vw, 44px);
+  text-align: center;
+  line-height: 1.3em;
+  margin-bottom: 2rem;
+
+  animation: reload-animation 1s forwards 0.2s; /* reload animation */
+}
+
+#home-section .bio .unique-font{
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+}
+
+#home-section .download-resume-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(13,13,13,255);
+  width: 200px;
+  height: 46px;
+  border-radius: 20px;
+  border: none;
+  margin-inline: auto;
+
+  animation: reload-animation 1s forwards 0.3s; /* reload animation */
+}
+
+#home-section .download-resume-btn.glowing-button{
+  --rotate-speed: 3.5s;
+  --offset: 1.6px;
+  --glow-value: 250px;
+  --glow-color:  conic-gradient(transparent 270deg, rgba(55, 212, 133, 0.8), transparent);
+
+  position: relative;
+  overflow: hidden;
+}
+
+#home-section .download-resume-btn .label{
+  color: white;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+#home-section .download-resume-btn .download-icon{
+  max-width: 1.7rem;
+  z-index: 2;
+} 
+
+@media(width > 780px){
+ #home-section{
+  padding-top: 4rem;
+ }
+}
+
+@keyframes skills-scroll{
+  to{
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}

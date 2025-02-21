@@ -1,0 +1,134 @@
+#projects-section{
+  margin-bottom: 18rem;
+}
+
+.projects-card-container.d-grid{
+  display: grid;
+  row-gap: 11rem;
+  column-gap: 2.5rem;
+}
+
+.projects-card-container .project-card{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 460px;
+  margin-inline: auto;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.projects-card-container .project-card:hover .blur-img-container{
+  opacity: 0.3;
+}
+
+
+.project-card .project-image{
+  width: 100%;
+  max-width: 425px;
+  height: clamp(240px, 80vw, 330px);
+  border-radius: 10px;
+  opacity: 0.5;
+  transform: scale(0.89);
+  z-index: 3;
+}
+
+.project-card .blur-img-container{
+  opacity: 0;
+  flex: none;
+  height: 335px;
+  position: absolute;
+  right:0;
+  left: 0;
+  bottom: 130px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  filter: brightness(2) saturate(2) blur(80px);
+  -webkit-filter: brightness(2) saturate(2) blur(80px);
+  overflow: hidden;
+  will-change:  transform;
+  z-index: 0;
+  transition: 0.7s;
+}
+
+.project-card .blur-img-container .img-wrapper{
+  position: absolute;
+  border-radius: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.project-card .blur-img-container .img-wrapper img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center;
+  object-fit: cover;
+}
+
+
+.project-card .project-details{
+  position: absolute;
+  bottom: 14%;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.114) 0px 0.602187px 1.08394px -0.416667px, rgba(0, 0, 0, 0.15) 0px 2.28853px 4.11936px -0.833333px, rgba(0, 0, 0, 0.306) 0px 10px 18px -1.25px, rgba(0, 0, 0, 0.58) 0px -1px 1px 0px inset;
+   opacity: 1;
+   padding: 20px;
+   z-index: 10;
+}
+
+.project-card .project-details .project-type{
+  width: fit-content;
+  color: rgb(173, 173, 173);
+  font-size: 12px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  opacity: 1;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.099);
+}
+
+.project-card .project-details .project-name{
+  font-size: 2rem;
+  padding: 1.5px;
+  /* margin: 0.4rem 0; */
+  margin-bottom: 0.6rem;
+  background-image: linear-gradient(0deg, rgb(199, 199, 199) 0%, rgb(250, 250, 250) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.project-card .project-details .project-description{
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  line-height: 1em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.project-card .project-details .project-logo{
+  width: clamp(2rem, 30vw, 3rem);
+  position: absolute;
+  font-size: 2rem;
+  right: 5px;
+  bottom: 5px;
+}
+
+@media(width > 999px){
+  .projects-card-container.d-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
