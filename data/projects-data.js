@@ -79,10 +79,10 @@ const projects = [
     yearCreated: '2025',
     projectGoal: 'The project is a virtual organic food store application with a fake json server database (REST API) React.js <-> Node.js',
     logo: 'project logo 2.png', // Add your project logo to the "projects-logos" folder and specify the filename here
-    image: 'project-image2.png', // Add your project image to the "images" folder and specify the filename here
-    projectLink: 'https://meowish-0.github.io/Meowish-Website2/page.html',
-    projectLinkGit: "",
-    overview: `Put your project overview here. Briefly describe what your project is about and its key features.`,
+    image: '68747470733a2f2f692e6962622e636f2f683154447933622f42616e6e65722e6a7067.png', // Add your project image to the "images" folder and specify the filename here
+    projectLink: '',
+    projectLinkGit: "https://github.com/Dark-Vol/Organick",
+    overview: `Under development.`,
     techStacks: [
       {
         name: 'Sass',
