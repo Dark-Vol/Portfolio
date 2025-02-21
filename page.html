@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/background.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/sections-style/home-section.css">
+    <link rel="stylesheet" href="style/sections-style/services-section.css">
+    <link rel="stylesheet" href="style/sections-style/projects-section.css">
+    <link rel="stylesheet" href="style/sections-style/contact-section.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <title>Editable Portfolio Website</title>
+  </head>
+  <body>
+    <!------------------ SHOOTING STARS BACKGROUND ------------------>
+    <div class="background">
+      <!-- Creates multiple shooting stars for the animated background -->
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <div class="shooting-star"><div class="shooting-star-head"></div></div>
+      <!-- Static background stars -->
+      <div class="fixed-stars-img"></div>
+    </div>
+
+    <!----------------------------- HEADER -------------------------->
+    <header id="header" class="header-gsap-animate">
+      <div class="d-flex">
+        <div class="name-and-skills-container">
+          <!-- Name and skills will be dynamically rendered in render-content.js  -->
+        </div>
+
+        <div class="nav-icon show-nav-icon">
+          <!-- Mobile navigation icon -->
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+  
+      <nav class="top-nav">
+        <ul>
+          <li>
+            <a class="glowing-button" href="#services-section">
+              <p class="label">Services</p>
+            </a>
+          </li>
+          <li>
+            <a class="glowing-button" href="#projects-section">
+              <p class="label">Projects</p>
+            </a>
+          </li>
+          <li>
+            <a class="glowing-button" href="#contact-section">
+              <p class="label">Contact</p>
+            </a>
+          </li>
+        </ul>     
+      </nav>
+    </header>
+
+    <!----------------------------- SECTIONS ------------------------>
+    <main class="sections-container">
+      <div class="wrapper">
+        <section id="home-section">
+          <!-- To update personal data, go to the 'data' folder.
+               The content is rendered dynamically in render-content.js -->
+        </section>
+      </div>
+
+      <section id="services-section">
+        <div class="scroller visibility-based scroll-animate" data-direction="right">
+          <div class="services-card-container scroller__inner d-flex">
+            <!-- To update services data, go to the 'data' folder.
+               The content is dynamically rendered in render-content.js -->
+          </div>
+        </div>
+      </section>
+
+      <div class="wrapper">
+        <section id="projects-section">
+          <div class="projects-card-container d-grid">
+            <!-- To update projects data, go to the 'data' folder.
+                 The content is dynamically rendered in render-content.js -->
+          </div>
+        </section>
+      </div>
+      
+      <div class="wrapper">
+        <section id="contact-section">
+          <!-- To update contact information, go to the 'data' folder.
+               The content is dynamically rendered in render-content.js -->
+        </section>
+      </div>
+    </main>
+
+    <!----------------------- FOOTER ---------------------------->
+    <div class="wrapper">
+      <footer>
+        <!-- To update footer content, go to the 'data' folder.
+             The content is dynamically rendered in render-content.js -->
+      </footer>
+    </div>
+  
+    <!-- External JavaScript libraries -->
+    <script src="script/gsap/ScrollTrigger.min.js"></script>
+    <script src="script/gsap/gsap.min.js"></script>
+    <script type="module" src="script/main.js"></script>
+  </body>
+</html>
