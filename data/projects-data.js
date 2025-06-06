@@ -162,24 +162,33 @@ const projects = [
   },
   {
     id: 4,
-    title: '',
-    mainColor: 'rgb(0, 170, 255)',
-    type: '',
-    yearCreated: '2024',
+    title: 'Ytyt',
+    mainColor: 'rgb(111, 0, 202)',
+    type: 'Website',
+    yearCreated: '2025',
     projectGoal: 'To display some of my information',
-    logo: 'project logo 5.png',
-    image: 'project-image5.png',
-    projectLink: '',
-    projectLinkGit: "",
+    logo: 'project logo 6.png',
+    image: 'Ytyt.png',
+    projectLink: '#',
     overview: `Put your project overview here. Briefly describe what your project is about and its key features.`,
     techStacks: [
       {
-        name: 'X',
-        type: 'X',
-        icon: 'X',      
-      }
+        name: 'CSS',
+        type: 'Stylesheets',
+        icon: 'css-3 icon.png',      
+      },
+      {
+        name: 'Javascript',
+        type: 'Programming Language',
+        icon: 'js icon.png',      
+      },
+      {
+        name: 'TypeScript',
+        type: 'Programming Language',
+        icon: 'typescript.png',
+      },
     ]
-  },
+  }
   // {
   //   id: 4, // Don't change the project ID
   //   title: 'Astro Solve',
